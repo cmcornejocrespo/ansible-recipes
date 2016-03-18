@@ -1,4 +1,4 @@
-- hosts: <hots>
+- hosts: <host>
   gather_facts: False
 
   vars_prompt:

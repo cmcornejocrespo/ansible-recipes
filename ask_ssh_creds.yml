@@ -1,0 +1,20 @@
+- hosts: <hots>
+  gather_facts: False
+
+  vars_prompt:
+    - name: "user"
+      prompt: "SSH user"
+      default: "ubuntu"
+      private: no
+
+    - name: "password"
+      prompt: "SSH password"
+      private: yes
+
+  vars:
+    ansible_user: "{{ user }}"
+    ansible_ssh_pass: "{{ password }}"
+    ansible_sudo_pass: "{{ password }}"
+
+  roles:
+    - <role>

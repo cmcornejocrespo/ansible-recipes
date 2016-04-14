@@ -1,0 +1,6 @@
+- name: Echo secret
+  command: echo "{{ secret }}"
+  register: echo
+
+- name: Print secret
+  debug: msg="Secret - {{ echo.stdout }}"

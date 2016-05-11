@@ -1,0 +1,19 @@
+- hosts: localhost
+  connection: local
+  gather_facts: False
+
+  vars:
+    region: us-east-1
+    vpc_id: vpc-xxx
+
+    key_pair_name: ansible-demo
+    dns_zone: demo.com
+    security_group: web_sg
+    iam_role: Web
+    iam_policy: Web
+
+  roles:
+    - { role: aws_ec2_key }
+    - { role: aws_group }
+    - { role: aws_policy, policy_json: 'files/policies/Web.json' }
+    - { role: aws_ec2, tag_name: web, instance_type: t2.small }

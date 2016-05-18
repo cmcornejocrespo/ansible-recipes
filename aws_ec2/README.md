@@ -1,7 +1,7 @@
 ## AWS EC2 example
 
 ## Setup
-Change line 7 in `main.yml` file to the aws VPC you want to use.
+Change line 7 and 8 in `main.yml` file to the aws VPC you want to use.
 Playbook creates:
 
 - ssh key

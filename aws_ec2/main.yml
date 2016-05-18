@@ -4,7 +4,8 @@
 
   vars:
     region: eu-west-1
-    vpc_id: vpc-xxx
+    vpc_id: vpc-xxxxxxxx
+    vpc_subnet_id: subnet-xxxxxxxx
 
     key_pair_name: ansible-demo
     dns_zone: demo.com

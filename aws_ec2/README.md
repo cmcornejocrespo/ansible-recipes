@@ -21,3 +21,7 @@ Before running playbook, you will need to install and configure `boto`.
     export AWS_SECRET_ACCESS_KEY='abc123'
 
     ansible-playbook main.yml
+
+## Connect
+
+    ssh -i ~/.ssh/ansible-demo ubuntu@<public_ip>

@@ -1,3 +1,3 @@
 # ansible-recipes
 
-Collection of ansible templates
+Examples of doing IT infrastructure tasks in Ansible.

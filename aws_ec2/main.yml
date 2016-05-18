@@ -3,7 +3,7 @@
   gather_facts: False
 
   vars:
-    region: us-east-1
+    region: eu-west-1
     vpc_id: vpc-xxx
 
     key_pair_name: ansible-demo
@@ -15,5 +15,5 @@
   roles:
     - { role: aws_ec2_key }
     - { role: aws_group }
-    - { role: aws_policy, policy_json: 'files/policies/Web.json' }
+    - { role: aws_policy, policy_document: 'files/policies/Web.json' }
     - { role: aws_ec2, tag_name: web, instance_type: t2.small }

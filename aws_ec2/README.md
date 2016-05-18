@@ -16,4 +16,12 @@ needed and can be removed
 Before running playbook, you will need to install and configure `boto`.
 
 ## Run
-`ansible-playbook main.yml`
+
+    export AWS_ACCESS_KEY_ID='AK123'
+    export AWS_SECRET_ACCESS_KEY='abc123'
+
+    ansible-playbook main.yml
+
+## Connect
+
+    ssh -i ~/.ssh/ansible-demo ubuntu@<public_ip>
